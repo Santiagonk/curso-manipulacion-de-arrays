@@ -45,3 +45,18 @@ const rta5 = rta4.flatMap(item => {
     return item.map(date=>date.startDate);
 });
 console.log(rta5);
+
+function solution(lines) {
+    // Tu código aquí 👈     
+    return lines.flatMap(item => {
+        return item.split(' ').length
+        }).reduce((sum, element) => sum + element, 0)
+}; 
+
+console.log(solution([
+    "Beautiful is better than ugly",
+    "Explicit is better than implicit",
+    "Simple is better than complex",
+    "Complex is better than complicated",
+])
+)
